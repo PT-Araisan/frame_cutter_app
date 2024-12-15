@@ -5,23 +5,24 @@ Pythonを使って簡単な操作で動画を切り取るツールです。主�
 
 ## 使い方手順
 ### 1. プログラムのダウンロード
-- [こちら](https://github.com/PT-Araisan/frame_cutter/blob/main/frame_cutter.py)のプログラムが保存されているページに移動します。
+- [こちら](https://github.com/PT-Araisan/frame_cutter_app/blob/main/frame_cutter.py)のプログラムが保存されているページに移動します。
 - 赤丸をクリックしてファイルをダウンロードします。
-![demo3](https://github.com/PT-Araisan/frame_cutter/blob/main/assets/3.png)
+![demo3](https://github.com/PT-Araisan/frame_cutter_app/blob/main/assets/3.png)
 
-- もしサンプルの動画も必要であれば[こちら](https://github.com/PT-Araisan/frame_cutter/blob/main/sample.mp4)から同じようにダウンロードしてください。
+- もしサンプルの動画も必要であれば[こちら](https://github.com/PT-Araisan/frame_cutter_app/blob/main/sample.mp4)から同じようにダウンロードしてください。
 ダウンロードしたファイルは、フォルダを作成してその中に入れておいて下さい。切り取りたい動画も同じフォルダに入れてください。
 
 
 ### 2. コマンドプロンプトの起動とフォルダの移動
 - コマンドプロンプトは、コマンドを使ってプログラムを操作するためのツールです。Windowsでは、次の手順でコマンドプロンプトを起動できます。
 - 検索窓でコマンドプロンプトを検索してクリックします。
-![demo1](https://github.com/PT-Araisan/frame_cutter/blob/main/assets/1.png)
+![demo1](https://github.com/PT-Araisan/frame_cutter_app/blob/main/assets/1.png)
+
 ※Macの場合はターミナルを使用。
 
 - コマンドプロンプトに「cd」と半角スペースを入れて、先ほど作ったフォルダをドラッグ＆ドロップして下さい。
 
-![demo4](https://github.com/PT-Araisan/frame_cutter/blob/main/assets/4.png)
+![demo4](https://github.com/PT-Araisan/frame_cutter_app/blob/main/assets/4.png)
 
 ※cdはプログラムを実行するフォルダを変更するコマンド。
 
@@ -47,7 +48,7 @@ python -m venv venv
 venv\Scripts\activate
 ```
 仮想環境が立ち上がれば、以下のように変わります。
-![demo5](https://github.com/PT-Araisan/frame_cutter/blob/main/assets/5.png)
+![demo5](https://github.com/PT-Araisan/frame_cutter_app/blob/main/assets/5.png)
 
 ※Macの場合は
 ```bash
@@ -82,7 +83,7 @@ python frame_cutter.py
 ※サポートしている拡張子は.mp4, .avi, .mov, .mkvです。
 
 すると、以下のようなウインドウが立ち上がります。
-![demo6](https://github.com/PT-Araisan/frame_cutter/blob/main/assets/6.png)
+![demo6](https://github.com/PT-Araisan/frame_cutter_app/blob/main/assets/6.png)
 
 ウインドウの大きさは解像度に応じて自動で決められますが、もっと大きくしたい場合にはマウスを使って広げられます。
 ※その際には広げた後にコマンドプロンプト上で「Ctrl + C」で一旦プログラムを終了し、再度プログラムを起動してください。
@@ -104,7 +105,7 @@ python frame_cutter.py
   ⓻ 入力した範囲のフレームが切り取られ、動画として「clipped_video.mp4」という名前でフォルダ内に保存されます。  
 
 うまくいくと、コマンドプロンプトはこのような表示になっているはずです。
-![demo7](https://github.com/PT-Araisan/frame_cutter/blob/main/assets/7.png)
+![demo7](https://github.com/PT-Araisan/frame_cutter_app/blob/main/assets/7.png)
 
 
 ### 8. :プログラムを次に使う場合の注意点
