@@ -70,22 +70,6 @@ def play_video():
         elif key == 32:  # スペースキーで再生・一時停止
             playing = not playing
             print("再生中" if playing else "一時停止中")
-        elif key == ord('d'):  # 'd' でフレームを進める
-            curpos = int(cap.get(cv2.CAP_PROP_POS_FRAMES))
-            new_pos = min(curpos, frames - 1)  
-            cap.set(cv2.CAP_PROP_POS_FRAMES, new_pos)
-            cv2.setTrackbarPos(trackbarname_frame, windowname, new_pos)
-            ret, frame = cap.read()
-            if ret:
-                cv2.imshow(windowname, frame)
-        elif key == ord('a'):  # 'a' でフレームを戻す
-            curpos = int(cap.get(cv2.CAP_PROP_POS_FRAMES))
-            new_pos = max(curpos - 2, 0)  
-            cap.set(cv2.CAP_PROP_POS_FRAMES, new_pos)
-            cv2.setTrackbarPos(trackbarname_frame, windowname, new_pos)
-            ret, frame = cap.read()
-            if ret:
-                cv2.imshow(windowname, frame)
 
     cap.release()
     cv2.destroyAllWindows()
