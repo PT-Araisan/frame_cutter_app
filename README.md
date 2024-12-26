@@ -24,7 +24,7 @@ Pythonを使って簡単な操作で動画を切り取るツールです。主�
 
 ![demo4](https://github.com/PT-Araisan/frame_cutter_app/blob/main/assets/4.png)
 
-※cdはプログラムを実行するフォルダを変更するコマンド。
+※cdはフォルダを変更するコマンド。
 
 
 ### 3. Pythonのインストール:
